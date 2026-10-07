@@ -1,0 +1,14 @@
+# Echte Geheimnisse und lokale Werte – niemals committen
+.env
+*.env
+!.env.example
+
+# Schlüssel und Zertifikate
+*.key
+*.pem
+id_rsa*
+id_ed25519*
+
+# Editor/OS
+.DS_Store
+*.swp
