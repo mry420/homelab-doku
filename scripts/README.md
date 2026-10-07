@@ -17,3 +17,4 @@ Skripte für wiederkehrende Aufgaben im Homelab.
 | Skript          | Zweck                       | Läuft auf |
 |-----------------|-----------------------------|-----------|
 | `_vorlage.sh`   | Vorlage für neue Skripte    | –         |
+| `inventar-proxmox.sh` | Inventar aller LXC/VMs als Markdown-Tabelle (nur lesend) | Proxmox-Host |
