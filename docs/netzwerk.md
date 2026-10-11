@@ -22,7 +22,7 @@ Für Web-Dienste, die über eine Domain erreichbar sein sollen.
 | Eigenschaft      | Wert                          |
 |------------------|-------------------------------|
 | Läuft auf        | TODO (CT/VM, IP)              |
-| Domain           | `<DOMAIN>`                    |
+| Domain           | TODO – vermutlich `schuetz-media.net` (siehe RustDesk), bitte bestätigen |
 | Tunnel-Token     | `<CLOUDFLARE_TUNNEL_TOKEN>` (nur in `.env`) |
 | Cloudflare Access| TODO (ja/nein, für welche Dienste) |
 
@@ -68,9 +68,16 @@ kein HTTP sprechen, ins Heimnetz weiter.
 
 | Eigenschaft     | Wert                         |
 |-----------------|------------------------------|
+| Hostname        | `support.schuetz-media.net` (ID-/Rendezvous- und Relay-Server) |
 | hbbs/hbbr läuft | TODO (auf dem VPS selbst oder im Heimnetz?) |
 | Ports           | TODO (Standard: 21115–21117/TCP, 21116/UDP; Web-Client 21118–21119/TCP) |
-| Public Key      | `<RUSTDESK_PUBLIC_KEY>`      |
+| Public Key      | `<RUSTDESK_PUBLIC_KEY>` – steht im Client-Build, siehe unten |
+
+Eigener Client: Das Repo
+[`mry420/rustdesk-schuetz-support`](https://github.com/mry420/rustdesk-schuetz-support)
+baut einen RustDesk-Client mit dem Namen „Schuetz-Digital Support“. Das Skript
+`.github/scripts/schuetz-branding.sh` trägt dort beim Build den Server
+`support.schuetz-media.net` und den Public Key fest ein.
 
 ### Gameserver
 
